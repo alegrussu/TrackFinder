@@ -14,9 +14,9 @@ public class MongoConnector {
         try {
             mongoClient = MongoClients.create(conn);
             database = mongoClient.getDatabase(db_name);
-            System.out.println("Connessione a MongoDB riuscita!");
+            System.out.println("Connessun to MongoDB: Successfull");
         } catch (Exception e) {
-            System.err.println("Errore durante la connessione a MongoDB: " + e.getMessage());
+            System.err.println("An error has occured while connecting to MongoDB: " + e.getMessage());
         }
     }
 
@@ -27,7 +27,7 @@ public class MongoConnector {
     public static void closeConnection() {
         if (mongoClient != null) {
             mongoClient.close();
-            System.out.println("Connessione a MongoDB chiusa.");
+            System.out.println("Connection to MongoDB closed.");
         }
     }
 }
