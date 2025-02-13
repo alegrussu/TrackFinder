@@ -4,7 +4,6 @@ import com.mongodb.client.MongoDatabase;
 
 public class MongoConnector {
 
-
     private static final String conn = "mongodb://localhost:27017";
     private static final String db_name = "TrackSeeker";
     private static MongoClient mongoClient;
