@@ -21,7 +21,7 @@ public class MongoConnector {
     }
 
     public static MongoDatabase getDatabase() {
-        return database;
+        return da tabase;
     }
 
     public static void closeConnection() {
